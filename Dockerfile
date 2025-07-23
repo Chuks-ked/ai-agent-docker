@@ -5,12 +5,12 @@ WORKDIR /app
 
 
 # COPY loal_folder container_folder
-# RUN mkdir -p /templates_folder
-# COPY ./templates /templates_folder
+# RUN mkdir -p /static_folder
+# COPY ./static /static_folder
 
 # Same destination folder is /app 
-# COPY ./templates /app
-COPY ./templates .
+# COPY ./static /app
+COPY ./static .
 
 # RUN echo "hello world" > index.html
 
