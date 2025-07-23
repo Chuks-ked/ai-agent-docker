@@ -51,10 +51,12 @@ docker push chuksked/ai-py-app-test --all-tags
 
 ```bash
 docker compose up
+docker compose up --build
 ```
 
 ```bash
 docker compose down
+docker compose down --build
 ```
 
 ```bash
