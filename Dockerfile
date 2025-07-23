@@ -4,7 +4,15 @@ FROM python:3.13.4-slim-bullseye
 WORKDIR /app
 
 
-RUN echo "hello world" > index.html
+# COPY loal_folder container_folder
+# RUN mkdir -p /templates_folder
+# COPY ./templates /templates_folder
+
+# Same destination folder is /app 
+# COPY ./templates /app
+COPY ./templates .
+
+# RUN echo "hello world" > index.html
 
 # docker build -f Dockerfile -t pyapp .
 # docker run -it pyapp
