@@ -6,11 +6,11 @@ WORKDIR /app
 
 # COPY loal_folder container_folder
 # RUN mkdir -p /static_folder
-# COPY ./static /static_folder
+# COPY ./static_html /static_folder
 
 # Same destination folder is /app 
-# COPY ./static /app
-COPY ./static .
+# COPY ./static_html /app
+COPY ./src .
 
 # RUN echo "hello world" > index.html
 
