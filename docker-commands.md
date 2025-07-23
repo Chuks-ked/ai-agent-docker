@@ -30,18 +30,18 @@ docker run -it pyapp /bin/bash
 
 ### Build and Push to Docker Hub
 
-- Docker Hub Repo/username: codingforentrepreneurs
+- Docker Hub Repo/username: chuksked
 - Container image name: `ai-py-app-test`
 - Container image tag: `v1`
 
 ```bash
-docker build -f Dockerfile -t codingforentrepreneurs/ai-py-app-test:v1 .
+docker build -f Dockerfile -t chuksked/ai-py-app-test:v1 .
 ```
 
 ```bash
-docker push codingforentrepreneurs/ai-py-app-test:v1
+docker push chuksked/ai-py-app-test:v1
 # or
-docker push codingforentrepreneurs/ai-py-app-test --all-tags
+docker push chuksked/ai-py-app-test --all-tags
 ```
 
 
