@@ -1,10 +1,19 @@
 services: #docker compose expects it
-  app: #custom key name
+  static_html: #custom key name
     # image: python:3.13.4-slim-bullseye
     build: 
-      context: .
-      dockerfile: Dockerfile
+      context: ./static_html
+      dockerfile: static.Dockerfile
     ports:
       - 8000:8000
       - 3000:8000
     command: python -m http.server 8000
+  # app: #custom key name
+  #   # image: python:3.13.4-slim-bullseye
+  #   build: 
+  #     context: ./static_html
+  #     dockerfile: static.Dockerfile
+  #   ports:
+  #     - 8000:8000
+  #     - 3000:8000
+  #   command: python -m http.server 8000
