@@ -7,10 +7,8 @@ from api.chat.routing import router as chat_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # before app startup
     init_db()
     yield
-    # after app startup
 
 app = FastAPI(lifespan=lifespan)
 app.include_router(chat_router, prefix="/api/chats")
