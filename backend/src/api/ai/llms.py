@@ -1,4 +1,4 @@
-import os 
+import os
 from langchain_openai import ChatOpenAI
 
 OPENAI_BASE_URL = os.environ.get('OPENAI_BASE_URL') or None
@@ -14,4 +14,4 @@ def get_openai_llm():
     }
     if OPENAI_BASE_URL:
         openai_params['base_url'] = OPENAI_BASE_URL
-    return ChatOpenAI(**openai_params) 
+    return ChatOpenAI(**openai_params)
